@@ -16,10 +16,12 @@
         <li><a href="#">Categories</a></li>
       </ul>
     </nav>
-    <b
-      >Olivia<br />
-      clothing.co</b
-    >
+
+    <header class="header">
+      <b><em> Olivia</em></b>
+      <b>clothing.co</b>
+    </header>
+
     <div class="page1">
       <img class="jpg8" src="8.jpg.png" alt="sorry" />
       <img class="jpg11" src="11.jpg.jpg" alt="sorry" />
@@ -27,20 +29,115 @@
       <img class="jpg7" src="7.jpg.png" alt="sorry" />
       <p class="available">Available to checkout</p>
     </div>
-    <div class="text">
-      <form action="#">
-        <label for="Name">Name :</label><br />
-        <input type="text" /><br />
-        <label for="Email">Email :</label><br />
-        <input type="email" /><br />
-        <label for="Email">Address :</label><br />
-        <input type="text" /><br />
-        <label for="Province & City">Province & City :</label><br />
-        <input type="text" /><br />
-        <label for="Phone Number">Phone Number :</label><br />
-        <input type="number" /><br />
-      </form>
-    </div>
+
+    <form action="" method="get" class="form-example">
+      <div class="name">
+        <label for="name">Name: </label><br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="type your name here.."
+          required
+        />
+      </div>
+      <div class="email">
+        <label for="email">Email: </label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="enter your email here.."
+          required
+        />
+      </div>
+      <div class="address">
+        <label for="address">Address: </label><br />
+        <input
+          type="text"
+          name="address"
+          id="address"
+          placeholder="enter your address here.."
+          required
+        />
+      </div>
+      <div class="province">
+        <label for="province & city">Province & City: </label><br />
+        <input
+          type="text"
+          name="province & city"
+          id="province & city"
+          placeholder="enter your province here.."
+          required
+        />
+      </div>
+      <div class="phone-number">
+        <label for="phone-number">Phone Number: </label><br />
+        <input
+          type="number"
+          name="phone-number"
+          id="phone-number"
+          placeholder="enter your phone number here.."
+          required
+        />
+      </div>
+
+      <div class="radio-button">
+        <h2>Choose yours:</h2>
+         
+        <input
+          type="radio"
+          id="im-look-so-gergous-in-nude-style"
+          name="choose-yours"
+          value="Im look so gergous in nude style"
+        />
+         
+        <label for="im-look-so-gergous-in-nude-style"
+          >Im look so gergous in nude style</label
+        ><br />
+         
+        <input
+          type="radio"
+          id="im-look-so-pretty-in-colorfull-cloths"
+          name="choose-yours"
+          value="im look so pretty in colorfull cloths"
+        />
+         
+        <label for="im-look-so-pretty-in-colorfull-cloths"
+          >Im look so pretty in colorfull cloths</label
+        ><br />
+      </div>
+
+      <fieldset>
+        <h2>Let us see how beautiful you're</h2>
+
+        <label
+          ><input type="checkbox" name="jogger" value="jogger" checked />
+          Wearing jogger pants</label
+        ><br />
+        <label
+          ><input type="checkbox" name="dress" value="dress" /> Looking for my
+          elegant dress</label
+        ><br />
+        <label
+          ><input type="checkbox" name="hotpants" value="hotpants" /> Hotpants
+          for chilling</label
+        ><br />
+        <label
+          ><input type="checkbox" name="jacket" value="jacket" /> Jacket is my
+          style</label
+        ><br />
+      </fieldset>
+
+      <h2 for="story">Give your opinion about us:</h2>
+      <br />
+      <textarea id="story" name="story" rows="8" cols="30">
+type here.....
+</textarea
+      ><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <img class="jpg2" src="2.jpg.jpg" alt="sorry" />
   </body>
 </html>
 
@@ -50,7 +147,7 @@ text input
 email input
 textarea input
 radio button input
-checlist input
+checklist input
 required input
 
 flexbox:
