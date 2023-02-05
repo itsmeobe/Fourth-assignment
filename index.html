@@ -13,7 +13,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">Categories</a></li>
+        <li class="categories"><a href="#">Categories</a><b>+5</b></li>
       </ul>
     </nav>
 
@@ -31,113 +31,128 @@
     </div>
 
     <form action="" method="get" class="form-example">
-      <div class="name">
-        <label for="name">Name: </label><br />
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="type your name here.."
-          required
-        />
-      </div>
-      <div class="email">
-        <label for="email">Email: </label><br />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="enter your email here.."
-          required
-        />
-      </div>
-      <div class="address">
-        <label for="address">Address: </label><br />
-        <input
-          type="text"
-          name="address"
-          id="address"
-          placeholder="enter your address here.."
-          required
-        />
-      </div>
-      <div class="province">
-        <label for="province & city">Province & City: </label><br />
-        <input
-          type="text"
-          name="province & city"
-          id="province & city"
-          placeholder="enter your province here.."
-          required
-        />
-      </div>
-      <div class="phone-number">
-        <label for="phone-number">Phone Number: </label><br />
-        <input
-          type="number"
-          name="phone-number"
-          id="phone-number"
-          placeholder="enter your phone number here.."
-          required
-        />
+      <div class="form-left">
+        <div class="name">
+          <label for="name">Name: </label><br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="name"
+            placeholder="type your name here.."
+            required
+          />
+        </div>
+        <div class="email">
+          <label for="email">Email: </label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="email"
+            placeholder="enter your email here.."
+            required
+          />
+        </div>
+        <div class="address">
+          <label for="address">Address: </label><br />
+          <input
+            type="text"
+            name="address"
+            id="address"
+            class="address"
+            placeholder="enter your address here.."
+            required
+          />
+        </div>
+        <div class="province">
+          <label for="province & city">Province & City: </label><br />
+          <input
+            type="text"
+            name="province & city"
+            id="province & city"
+            class="province"
+            placeholder="enter your province here.."
+            required
+          />
+        </div>
+        <div class="phone-number">
+          <label for="phone-number">Phone Number: </label><br />
+          <input
+            type="number"
+            name="phone-number"
+            id="phone-number"
+            class="phone"
+            placeholder="enter your phone number here.."
+            required
+          />
+        </div>
+
+        <div class="radio-button">
+          <h2>Choose yours:</h2>
+           
+          <input
+            type="radio"
+            id="im-look-so-gergous-in-nude-style"
+            name="choose-yours"
+            value="Im look so gergous in nude style"
+          />
+           
+          <label for="im-look-so-gergous-in-nude-style"
+            >Im look so gergous in nude style</label
+          ><br />
+           
+          <input
+            type="radio"
+            id="im-look-so-pretty-in-colorfull-cloths"
+            name="choose-yours"
+            value="im look so pretty in colorfull cloths"
+          />
+           
+          <label for="im-look-so-pretty-in-colorfull-cloths"
+            >Im look so pretty in colorfull cloths</label
+          ><br />
+        </div>
       </div>
 
-      <div class="radio-button">
-        <h2>Choose yours:</h2>
-         
-        <input
-          type="radio"
-          id="im-look-so-gergous-in-nude-style"
-          name="choose-yours"
-          value="Im look so gergous in nude style"
-        />
-         
-        <label for="im-look-so-gergous-in-nude-style"
-          >Im look so gergous in nude style</label
-        ><br />
-         
-        <input
-          type="radio"
-          id="im-look-so-pretty-in-colorfull-cloths"
-          name="choose-yours"
-          value="im look so pretty in colorfull cloths"
-        />
-         
-        <label for="im-look-so-pretty-in-colorfull-cloths"
-          >Im look so pretty in colorfull cloths</label
-        ><br />
-      </div>
+      <div class="form-center">
+        <fieldset>
+          <h2>Let us see how beautiful you're</h2>
 
-      <fieldset>
-        <h2>Let us see how beautiful you're</h2>
+          <label
+            ><input type="checkbox" name="jogger" value="jogger" checked />
+            Wearing jogger pants</label
+          ><br />
+          <label
+            ><input type="checkbox" name="dress" value="dress" /> Looking for my
+            elegant dress</label
+          ><br />
+          <label
+            ><input type="checkbox" name="hotpants" value="hotpants" /> Hotpants
+            for chilling</label
+          ><br />
+          <label
+            ><input type="checkbox" name="jacket" value="jacket" /> Jacket is my
+            style</label
+          ><br />
+        </fieldset>
 
-        <label
-          ><input type="checkbox" name="jogger" value="jogger" checked />
-          Wearing jogger pants</label
-        ><br />
-        <label
-          ><input type="checkbox" name="dress" value="dress" /> Looking for my
-          elegant dress</label
-        ><br />
-        <label
-          ><input type="checkbox" name="hotpants" value="hotpants" /> Hotpants
-          for chilling</label
-        ><br />
-        <label
-          ><input type="checkbox" name="jacket" value="jacket" /> Jacket is my
-          style</label
-        ><br />
-      </fieldset>
-
-      <h2 for="story">Give your opinion about us:</h2>
-      <br />
-      <textarea id="story" name="story" rows="8" cols="30">
+        <h2 for="story">Give your opinion about us:</h2>
+        <br />
+        <textarea class="textarea" id="story" name="story" rows="8" cols="30">
 type here.....
 </textarea
-      ><br />
-      <input type="submit" value="Submit" />
+        ><br />
+        <input class="submit" type="submit" value="Submit" />
+      </div>
+      <img class="jpg2" src="2.jpg.jpg" alt="sorry" />
     </form>
-    <img class="jpg2" src="2.jpg.jpg" alt="sorry" />
+
+    <!-- contoh -->
+
+    <!-- <div class="contoh"> -->
+    <!-- <h2>Notifikasi <b>+10</b></h2> -->
+    <!-- </div> -->
   </body>
 </html>
 
